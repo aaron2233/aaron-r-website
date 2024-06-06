@@ -1,3 +1,85 @@
-git add index.html
-git commit -m "Add initial personal webpage"
-git push origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #about, #projects, #contact {
+            padding: 2em 0;
+            border-bottom: 1px solid #ddd;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        #contact form input, #contact form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        #contact form button {
+            padding: 0.5em;
+            font-size: 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Online Fraud Prevention Expert and AI/ML Enthusiast</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am an online fraud prevention expert with extensive experience in e-commerce. I specialize in using AI/ML rules engines and unsupervised learning systems to combat fraud. Additionally, I am proficient in data analysis, stock market analysis, and coding, particularly in Python.</p>
+            <p>I am also developing tools and software for financial modeling and stock market analysis. In my spare time, I enjoy creating humorous websites and optimizing LinkedIn profiles for AI prompt engineering roles.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li>AI-Powered Fraud Detection System: Leveraging machine learning to identify and prevent fraudulent transactions in real-time.</li>
+                <li>Humorous Stock Market Analysis Website: A fun tool that provides comedic feedback on stock choices, helping users to engage with market trends humorously.</li>
+                <li>LinkedIn Profile Optimization Tool: A tool designed to enhance LinkedIn profiles, specifically tailored for AI prompt engineers.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+
